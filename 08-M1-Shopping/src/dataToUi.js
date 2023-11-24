@@ -14,7 +14,7 @@ export const dataToUi = (data)=>{
             />
             <div class="card-body">
               <h5 class="card-title line-clamp-1">${title}</h5>
-              <p class="card-text line-clamp-3">${description}</p>
+              <p class="card-text line1 line3">${description}</p>
             </div>
             <div
               class="card-footer w-100 fw-bold d-flex justify-content-between gap-3"

@@ -1,6 +1,7 @@
 import './style.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { dataToUi } from './src/dataToUi';
+import { categoryArrFunc } from './src/categoryArr';
 
 const getShoppingData = async()=>{
   try {
@@ -10,6 +11,7 @@ const getShoppingData = async()=>{
     }else{
       const data = await res.json()
       dataToUi(data)
+      categoryArrFunc(data)
     }
   } catch (error) {
     console.log(error);
