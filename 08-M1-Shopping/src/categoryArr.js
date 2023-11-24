@@ -8,5 +8,12 @@ export const categoryArrFunc = (data) => {
   }, []);
   categoryArr.unshift("All");
   console.log(categoryArr);
+  const btns = document.getElementById("btns")
+  categoryArr.forEach((categorName)=>{
+    btns.innerHTML += `
+    <button class="btn btn-warning">${categorName}</button>
+    `
+  })
   return categoryArr;
 };
+
